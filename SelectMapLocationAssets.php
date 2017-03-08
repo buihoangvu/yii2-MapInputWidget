@@ -12,7 +12,7 @@ use yii\web\AssetBundle;
  */
 class SelectMapLocationAssets extends AssetBundle
 {
-    public $sourcePath = '@vendor/kalyabin/yii2-select-google-map-location/js';
+    public $sourcePath = '@vendor/buihoangvu/yii2-mapinputwidget/js';
     public $css = [];
     public $js = [
         'select-google-map-location.js',

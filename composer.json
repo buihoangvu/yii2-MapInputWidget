@@ -1,5 +1,5 @@
 {
-    "name": "kalyabin/yii2-select-google-map-location",
+    "name": "buihoangvu/yii2-MapInputWidget",
     "description": "Yii2 widget to select location at map and choose map coordinates",
     "type": "package",
     "keywords": [

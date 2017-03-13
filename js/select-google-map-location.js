@@ -22,6 +22,7 @@
             var mapOptions = {
                 center: new google.maps.LatLng(55.997778, 37.190278),
                 zoom: 12,
+                scrollwheel: false,
                 mapTypeId: google.maps.MapTypeId.ROADMAP,
                 panControl: true
             };

@@ -78,6 +78,11 @@ class SelectMapLocationWidget extends InputWidget
     public $renderWidgetMap;
 
     /**
+     * @var boolean render only map without input field
+     */
+    public $readonly;
+
+    /**
      * @var string Google API Key for Google Maps
      */
     public $googleMapApiKey;
@@ -129,6 +134,10 @@ class SelectMapLocationWidget extends InputWidget
 
         if (is_callable($this->renderWidgetMap)) {
             return call_user_func_array($this->renderWidgetMap, [$mapHtml]);
+        }
+
+        if ($this->readonly) {
+            return $mapHtml;
         }
 
         return Html::activeInput('text', $this->model, $this->attribute, $this->textOptions) . $mapHtml;
